@@ -9,7 +9,7 @@
   </div>
 
   <!----添加用户对话框---->
-  <user-add-dialog v-model="isDialogVisible"></user-add-dialog>
+  <user-add-dialog v-model="isDialogVisible" v-on:closeDialog="isDialogVisible = false"></user-add-dialog>
 
   <!-----用户列表---->
   <div style="margin-top: 30px">
@@ -143,15 +143,7 @@ export default {
     // 显示添加用户对话框
     OpenUserAddDialog() {
       this.isDialogVisible = true;
-    },
-
-    // 添加用户
-    submitForm() {
-      // 在这里提交表单的数据
-      console.log(this.form);
-      this.dialogFormVisible = false;
     }
-
   }
 }
 </script>

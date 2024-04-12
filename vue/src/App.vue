@@ -50,9 +50,9 @@
               </el-icon>
               <span>功能</span>
             </template>
-            <el-menu-item index="Course">课程管理</el-menu-item>
-            <el-menu-item index="Naming">点名（教师）</el-menu-item>
-            <el-menu-item index="Users">用户管理（管理员）</el-menu-item>
+            <el-menu-item index="Course" active="/Courses">课程管理</el-menu-item>
+            <el-menu-item index="Naming" active="/Naming">点名（教师）</el-menu-item>
+            <el-menu-item index="Users" active="/Users">用户管理（管理员）</el-menu-item>
           </el-sub-menu>
         </el-menu>
       </el-aside>
