@@ -29,6 +29,11 @@ public interface UserRepository extends MongoRepository<Users, Integer> {
     @Query("{'$or' : [{'number': {$regex: ?0}}, {'gender': {$regex: ?1}}]}")
     List<Users> findByNumberOrGenderLike(String number, String gender);
 
+    // admin添加用户
+
+
+
+
 
     // 分页查询
     Page<Users> findAll(Pageable pageable);

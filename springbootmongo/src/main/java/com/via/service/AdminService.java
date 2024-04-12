@@ -21,7 +21,7 @@ public class AdminService {
         return userRepository.findAll();
     }
 
-    // 根据name和number查询用户
+    // 查询用户
     public List<Users> findBy(Params params) {
         String name = params.getName();
         String number = params.getNumber();
@@ -42,6 +42,11 @@ public class AdminService {
         } else {
             return new ArrayList<>();
         }
+    }
+
+    // 添加用户
+    public Users addUser(Users user) {
+        return userRepository.save(user);
     }
 
     // 分页查询

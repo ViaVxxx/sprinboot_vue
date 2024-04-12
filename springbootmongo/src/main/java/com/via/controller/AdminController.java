@@ -7,10 +7,7 @@ import com.via.service.AdminService;
 import jakarta.annotation.Resource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,11 +35,22 @@ public class AdminController {
         return Result.success(list);
     }
 
-    // 根据name和number查询用户
+    // 查询用户
     @GetMapping("/searchUser")
     public Result searchUser(Params params) {
         List<Users> list = adminservice.findBy(params);
         return Result.success(list);
+    }
+
+    // 添加用户
+    @PostMapping("/addUser")
+    public Result addUser(@RequestBody Users user) {
+        Users savedUser = adminservice.addUser(user);
+        if (savedUser != null) {
+            return Result.success(savedUser);
+        } else {
+            return Result.error();
+        }
     }
 
     // 分页查询
