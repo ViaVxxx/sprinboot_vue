@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo_52iwct:mongo_j6ZMR2@192.227.191.37:27017/CMS?authSource=admin

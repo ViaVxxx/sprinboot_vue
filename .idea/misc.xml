@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="org.springframework.data.mongodb.repository.Query" />
+      <item index="1" class="java.lang.String" itemvalue="org.springframework.stereotype.Repository" />
+    </list>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-md/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot - mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootmongo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="graalvm-22" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

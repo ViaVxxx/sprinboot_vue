@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e609f7f-32ac-4afa-a9f3-f84e7e13234a/console_1.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/springboot/src/main/java/com/via/mapper/UserMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/springboot/src/main/resources/mapper/UserMapper.xml" dialect="GenericSQL" />
+  </component>
+</project>
